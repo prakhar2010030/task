@@ -1,0 +1,39 @@
+.outerContainer{
+    background-color: rgb(50, 50, 50);
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.upperContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom:2px grey inset;
+    padding: 1em;
+    width: 80%;  
+}
+
+.Heading{
+    color: white;
+}
+.lowerContainer{
+    display: flex;
+    margin: 1.5rem;
+    padding: 1rem;
+}
+
+
+@media (max-width:447px) {
+    .Heading{
+        font-size: 1.4em;
+    };
+    
+}
+@media (max-width:700px) {
+    .lowerContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

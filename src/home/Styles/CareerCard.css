@@ -1,0 +1,45 @@
+.careerCardContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  padding: 0 1rem;
+  margin: 1rem;
+  box-shadow: 12px 12px 2px 1px rgb(117, 73, 19);
+  position: relative;
+  width: 22%;
+}
+.careerTextContainer {
+    padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 3px;
+  text-align: justify;
+  gap:1rem;
+}
+.careerTextContainer h1{
+    font-size: large;
+}
+.iconContainer{
+    position: absolute;
+    top:-20px;
+    left:-10px;
+   border-radius: 53% 47% 58% 42% / 0% 100% 0% 100% ;
+   background: #000;
+   color:aliceblue;
+   height: 50px;
+   width: 80px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+
+@media (max-width:746px) {
+    .careerCardContainer{
+         width: auto;
+    }
+}
