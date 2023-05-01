@@ -26,21 +26,30 @@
 .imageContainer{
     width: 90%;
     display: flex;
+    gap:1rem;
+    /* border: 1px red solid; */
 }
 .leftContainer{
-    position: absolute;
+    /* position: absolute; */
+
 }
+/* .courseComponent{
+    
+} */
 
 .righContainer{
-    position: relative;
+    /* position: relative; */
     display: flex;
     align-items: center;
     gap:2rem;
-    left: 40%;
-    width: auto;
+    margin-left: -10rem;
+    /* left: 40%; */
+    /* width: auto; */
+    /* border: 1px green solid; */
 }
 .leftCourses,.rightCourses{
-    width: fit-content;
+    /* width: fit-content; */
+
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 1rem;
     border-radius: 15px;
@@ -71,12 +80,49 @@ border-radius: 10px;
     width: 60px;
 }
 
+@media (max-width:950px) {
+    .courseHeading{
+        flex-direction: column;
+        gap:0.2rem;
+    }
+    .imageContainer{
+
+        flex-direction: column !important;
+    }
+    .libraryImage{
+        
+    }
+    .righContainer{
+        margin-left: -0;
+    }
+    .leftContainer{
+        flex: 1;
+    }
+}
+
 @media (max-width:581px) {
     .courseHeading{
         flex-direction: column;
         gap:0.2rem;
     }
     .imageContainer{
+
+        flex-direction: column !important;
+    }
+    .leftContainer{
+        display: flex;
+        flex: 1;
+    }
+    .libraryImage{
+        /* height: 25rem; */
+        width: 20rem;
+        /* border: 1px red solid; */
+    }
+    .righContainer{
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* margin-left: -10rem; */
     }
 }
